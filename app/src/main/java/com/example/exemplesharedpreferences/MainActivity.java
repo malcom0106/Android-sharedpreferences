@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Context _context;
@@ -13,6 +14,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         _context = this;
-        SharedPreferences sharedPreferences = _context.getSharedPreferences("test",MODE_PRIVATE);
+
+        Toast.makeText(_context, "titi", Toast.LENGTH_SHORT).show();
+
+
     }
 }
