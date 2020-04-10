@@ -34,7 +34,7 @@ public class Fonctions {
             SharedPreferences sharedPreferences = context.getSharedPreferences(Constantes.SHARED_PREFERENCES,context.MODE_PRIVATE);
 
             SharedPreferences.Editor editor = sharedPreferences.edit();
-            if(!sharedPreferences.contains(key)) { editor.remove(key); }
+            if(sharedPreferences.contains(key)) { editor.remove(key); }
 
              return editor.commit();
         }
